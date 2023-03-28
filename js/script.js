@@ -9,10 +9,17 @@ createApp({
         return {
             message: "Hello Vue Js!",
             imgSrc: "https://picsum.photos/300",
-            imgDesc: "Random image"
+            imgDesc: "Random image",
+            titleColor: "red"
         }
     },
     methods: {
-
+        changeTitleColor() {
+            if (this.titleColor === "red") {
+                this.titleColor = "blue";
+            } else {
+                this.titleColor = "red";
+            }
+        }
     }
 }).mount("#app");
